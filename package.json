@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-player": "^2.9.0",
+    "react-spotify-player": "^1.0.4",
+    "react-transition-group": "^4.4.2",
+    "video.js": "^7.13.3"
+  }
+}
