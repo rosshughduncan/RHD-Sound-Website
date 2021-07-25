@@ -18,6 +18,7 @@ class App extends Component {
           selctedHeader={this.state.headerBarSelection}
           selectedSection={this.state.sectionBarSelection}
         />
+        <Contact/>
       </div>
     );
   };

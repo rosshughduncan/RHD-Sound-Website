@@ -1,11 +1,17 @@
 import React from 'react';
 import { CSSTransition } from "react-transition-group";
-import Item from '../../global/GlobalFunctions';
+import { Item } from '../../global/GlobalFunctions';
 import SpotifyPlayer from 'react-spotify-player';
 import ReactPlayer from 'react-player';
+import VideoJSPlayer from '../../global/VideoJSPlayer';
 
 const PortfolioAudio = (props) => {
-    items = [
+    // Setting the sources for each video
+    const videos = {
+        shooterGameMusic: props.videoJsSource('ShooterGameMusic.mp4')
+    };
+
+    const items = [
         Item(
             <div>
                 <h1>Audio Portfolio</h1>
@@ -100,6 +106,64 @@ const PortfolioAudio = (props) => {
                     url={'https://soundcloud.com/rudeedit/sets/orchard-ave-ep-free-download'}
                     width={'100%'}
                 />
+            </div>
+        ),
+        Item(
+            <div>
+                <h2>Changing States - Silver Linings</h2>
+                <p>
+                    Part of a self-released EP by Bristol-based producer Changing States, mastered by Ross.
+                </p>
+                <ReactPlayer
+                    url={'https://soundcloud.com/step9productions/changing-states-silver-linings'}
+                    width={'100%'}
+                />
+            </div>
+        ),
+        Item(
+            <div>
+                <h2>Kings Kin - Trixie</h2>
+                <p>A single from Bristol-based band Kings Kin, mastered by Ross.</p>
+                <ReactPlayer
+                    url={'https://soundcloud.com/kings-kin-band/trixie'}
+                    width={'100%'}
+                />
+            </div>
+        ),
+        Item(
+            <div>
+                <h2>The Orange Skies – You Don’t Wanna Say</h2>
+                <p>Part of a demo from Bristol-based band The Orange Skies, fully recorded, mixed and mastered by Ross.</p>
+                <ReactPlayer
+                    url={'https://soundcloud.com/step9productions/you-dont-wanna-say'}
+                    width={'100%'}
+                />
+            </div>
+        ),
+        Item(
+            <div>
+                <h2>Arwel Brown – cover of Biffy Clyro’s “Fingerhut”</h2>
+                <p>
+                    A group university assignment project which achieved a first. Vocals, bass and guitar are by Arwel, 
+                    with Ross Duncan on drums. Recording, mixing and mastering by Ross Duncan, Maxi Bajela and Dan Morris.
+                </p>
+                <ReactPlayer
+                    url={'https://soundcloud.com/step9productions/arwel-brown-fingerhut-biffy-clyro-cover'}
+                    width={'100%'}
+                />
+            </div>
+        ),
+        Item(
+            <div>
+                <h2>Interactive Music for Shooter Games Presentation</h2>
+                <p>
+                    An FMOD Studio project produced for a university assignment. It is a music state machine for a multiplayer 
+                    shooter game idea, inspired by themes from Fortnite and Bioshock. This video demonstrates the different 
+                    audio states and how they apply to the gameplay scenario.
+                </p>
+                <br></br>
+                <br></br>
+                <VideoJSPlayer { ...videos.shooterGameMusic }/>
             </div>
         )
     ];

@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "facebook-plugins": "^1.0.5",
     "react": "^17.0.2",
     "react-player": "^2.9.0",
     "react-spotify-player": "^1.0.4",

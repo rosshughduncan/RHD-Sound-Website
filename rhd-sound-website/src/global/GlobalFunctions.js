@@ -16,3 +16,7 @@ export const Item = (thisContent, thisCanSplit = true) => {
         }
     );
 };
+
+export const pubImg = (fileName) => {
+    return process.env.PUBLIC_URL + '/images/' + fileName;
+};
