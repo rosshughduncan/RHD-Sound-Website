@@ -1,6 +1,195 @@
+/**
+ * Global app style
+ */
+
 .App {
-  
+  font-family: 'Exo 2', sans-serif;
+  background-color: black;
 }
+
+/**
+ * Global element styles
+ */
+
+.App div {
+  margin-bottom: 0;
+}
+
+.App table {
+  color: white;
+  border: 0;
+  width: 100%;
+  text-align: left;
+}
+
+ /**
+  * Bars
+  */
+
+.HeaderBar {
+  background-color: #020066;
+}
+
+.SectionBar {
+  background-color: #133E4D;
+}
+
+/**
+ * Element divs
+ */
+
+.ElementDiv {
+  border-style: inset;
+  border-width: 0.2rem;
+}
+
+.Welcome1 {
+  background-color: #1E613C;
+  border-left-color: #237046;
+  border-top-color: #247347;
+  border-bottom-color: #247347;
+  border-right-color: #247549;
+}
+
+.Welcome2 {
+  background-color: #247347;
+  border-left-color: #288251;
+  border-top-color: #298552;
+  border-bottom-color: #298552;
+  border-right-color: #2A8754;
+}
+
+.Welcome3 {
+  background-color: #2B8A55;
+  border-left-color: #2F995F;
+  border-top-color: #309C61;
+  border-bottom-color: #309C61;
+  border-right-color: #319E62;
+}
+
+.About1 {
+  background-color: #00613C;
+  border-left-color: #007045;
+  border-top-color: #007347;
+  border-bottom-color: #007347;
+  border-right-color: #007548;
+}
+
+.About2 {
+  background-color: #107548;
+  border-left-color: #138551;
+  border-top-color: #138753;
+  border-bottom-color: #138753;
+  border-right-color: #138A54;
+}
+
+.About3 {
+  background-color: #00915A;
+  border-left-color: #00A163;
+  border-top-color: #00A365;
+  border-bottom-color: #00A365;
+  border-right-color: #00A666;
+}
+
+.BroadcastPortfolio1 {
+  background-color: #16455E;
+  border-left-color: #19506E;
+  border-top-color: #1A5270;
+  border-bottom-color: #1A5270;
+  border-right-color: #1A5473;
+}
+
+.BroadcastPortfolio2 {
+  background-color: #1C597A;
+  border-left-color: #20658A;
+  border-top-color: #20668C;
+  border-bottom-color: #20668C;
+  border-right-color: #21688F;
+}
+
+.BroadcastPortfolio3 {
+  background-color: #24729C;
+  border-left-color: #277DAB;
+  border-top-color: #287FAD;
+  border-bottom-color: #287FAD;
+  border-right-color: #2881B0;
+}
+
+.AudioPortfolio1 {
+  background-color: #105737;
+  border-left-color: #126640;
+  border-top-color: #136942;
+  border-bottom-color: #136942;
+  border-right-color: #136B44;
+}
+
+.AudioPortfolio2 {
+  background-color: #146E45;
+  border-left-color: #167D4F;
+  border-top-color: #178050;
+  border-bottom-color: #178050;
+  border-right-color: #178252;
+}
+
+.AudioPortfolio3 {
+  background-color: #178050;
+  border-left-color: #1A8F5A;
+  border-top-color: #1A915C;
+  border-bottom-color: #1A915C;
+  border-right-color: #1B945D;
+}
+
+.VideoPortfolio1 {
+  background-color: #2F634B;
+  border-left-color: #367356;
+  border-top-color: #377558;
+  border-bottom-color: #377558;
+  border-right-color: #38785A;
+}
+
+.VideoPortfolio2 {
+  background-color: #3C8060;
+  border-left-color: #438F6B;
+  border-top-color: #44916D;
+  border-bottom-color: #44916D;
+  border-right-color: #46946F;
+}
+
+.VideoPortfolio3 {
+  background-color: #5A946F;
+  border-left-color: #64A37B;
+  border-top-color: #65A67D;
+  border-bottom-color: #65A67D;
+  border-right-color: #67A87F;
+}
+
+.EventsPortfolio1 {
+  background-color: #1C4A0A;
+  border-left-color: #22590C;
+  border-top-color: #235C0D;
+  border-bottom-color: #235C0D;
+  border-right-color: #245E0D;
+}
+
+.EventsPortfolio2 {
+  background-color: #235C0D;
+  border-left-color: #296B0F;
+  border-top-color: #2A6E0F;
+  border-bottom-color: #2A6E0F;
+  border-right-color: #2B7010;
+}
+
+.EventsPortfolio3 {
+  background-color: #328212;
+  border-left-color: #389114;
+  border-top-color: #399415;
+  border-bottom-color: #399415;
+  border-right-color: #3A9615;
+}
+
+/**
+ * Miscellaneous
+ */
 
 .TableSeparator {
   padding-bottom: 0.2rem;

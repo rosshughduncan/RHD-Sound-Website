@@ -1,6 +1,7 @@
 import './App.css';
 import HeaderBar from './components/HeaderBar';
 import SectionBar from './components/SectionBar';
+import '@fontsource/exo-2';
 
 class App extends Component {
   state = {

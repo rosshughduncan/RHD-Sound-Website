@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@fontsource/exo-2": "^4.5.0",
     "facebook-plugins": "^1.0.5",
     "react": "^17.0.2",
     "react-player": "^2.9.0",
