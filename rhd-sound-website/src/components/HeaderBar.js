@@ -1,7 +1,7 @@
 import { Component } from "react";
-import { CSSTransition } from "react-transition-group";
+//import { CSSTransition } from "react-transition-group";
 
-class HeaderBar extends Component {
+export default class HeaderBar extends Component {
     render() {
         return (
             <div>

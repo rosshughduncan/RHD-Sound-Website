@@ -1,6 +1,6 @@
 import React from 'react';
-import { CSSTransition } from "react-transition-group";
-import { Item } from '../../global/GlobalFunctions';
+//import { CSSTransition } from "react-transition-group";
+import { Item, renderElementDiv } from '../../global/GlobalFunctions';
 import SpotifyPlayer from 'react-spotify-player';
 import ReactPlayer from 'react-player';
 import VideoJSPlayer from '../../global/VideoJSPlayer';
@@ -10,6 +10,18 @@ const PortfolioAudio = (props) => {
     const videos = {
         shooterGameMusic: props.videoJsSource('ShooterGameMusic.mp4')
     };
+
+    // Setting the animation timing for this page
+    const animationTiming = {
+        enter: 500,
+        exit: 1000
+    };
+
+    // Counter variable for current colour class
+    let currentColourClass = [-1];
+
+    // Number of columns on this page
+    const numColumns = 2;
 
     const items = [
         Item(
@@ -81,7 +93,7 @@ const PortfolioAudio = (props) => {
         ),
         Item(
             <div>
-                <h2></h2>
+                <h2>Radio Maria England: The Children's Rosary: The Glorious Mysteries</h2>
                 <p>
                     An episode recorded and mixed for Christian radio station Radio Maria England while Ross was serving as their 
                     broadcast engineer. Two families come together to pray the Holy Rosary.
@@ -170,7 +182,14 @@ const PortfolioAudio = (props) => {
 
     return (
         <div>
-
+            {renderElementDiv(
+                items,
+                ['AudioPortfolio1', 'AudioPortfolio2', 'AudioPortfolio3'],
+                props.showing,
+                animationTiming,
+                currentColourClass,
+                numColumns
+            )}
         </div>
     );
 };
