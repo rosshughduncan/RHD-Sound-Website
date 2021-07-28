@@ -37,7 +37,20 @@ export const renderElementDiv = (items, cssColourClasses, showing, animationTime
     };
 
     const getElements = (items) => {
-        const getCSSTransition = (currentItem, index) => {
+        const getCSSTransition = (currentItem, index, isFullWidth) => {
+            // Set up the classes for the element
+            // let classNameString = `ElementDiv ${thisColClass()}`;
+            // if (isFullWidth) {
+            //     classNameString += 'FullWidth';
+            // }
+            let classNameString;
+            if (isFullWidth) {
+                classNameString = `ElementDiv ${thisColClass()} FullWidth`;
+            }
+            else {
+                classNameString = `ElementDiv ${thisColClass()}`;
+            }
+
             return (
                 // show state is passed in as props
                 <CSSTransition
@@ -56,7 +69,7 @@ export const renderElementDiv = (items, cssColourClasses, showing, animationTime
                     key={index}
                 >
                         {/*<div classNames={`ElementDiv ${thisColClass()}`}>*/}
-                        <div classNames={`ElementDiv ${thisColClass()}`}>
+                        <div className={classNameString}>
                             {currentItem.content}
                         </div>
                 </CSSTransition>
@@ -77,13 +90,13 @@ export const renderElementDiv = (items, cssColourClasses, showing, animationTime
         for (let i = 0; i < itemsLength; i++) {
             /* Check if there is only one item left, or if the item is set to not split
                then fill that item in one div across the page */
-            if (i >= itemsLength - noColumns || !items[i].canSplit) {
+            if (i > itemsLength - noColumns || !items[i].canSplit) {
                 containerDivs.push(
                     <div 
                         className='ElementDivContainer'
                         key={i}
                     >
-                            {getCSSTransition(items[i], i)}
+                            {getCSSTransition(items[i], i, true)}
                     </div>
                 );
             }
@@ -95,7 +108,7 @@ export const renderElementDiv = (items, cssColourClasses, showing, animationTime
                         className='ElementDivContainer'
                         key={i}
                     >
-                            {getMultipleElements(i, items)}
+                            {getMultipleElements(i, items, false)}
                     </div>
                 )
                 // Counter should be moved forward to prevent duplicate items from being shown

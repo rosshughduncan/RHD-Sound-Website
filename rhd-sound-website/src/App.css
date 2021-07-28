@@ -3,8 +3,7 @@
  */
 
 .App {
-  font-family: 'Exo 2', sans-serif;
-  background-color: black;
+  background-color: #07170E;
 }
 
 /**
@@ -13,6 +12,10 @@
 
 .App div {
   margin-bottom: 0;
+  font-family: 'Exo 2', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: white;
 }
 
 .App table {
@@ -20,6 +23,18 @@
   border: 0;
   width: 100%;
   text-align: left;
+}
+
+.App h1 {
+  font-size: 4em;
+  font-weight: 10;
+  font-variant: small-caps;
+}
+
+.App h2 {
+  font-size: 100;
+  font-weight: 600;
+  font-variant: small-caps;
 }
 
  /**
@@ -41,28 +56,35 @@
 /* Used for individual animated elements
    Used in a CSSTransition component */
  .ElementDiv {
-  border-style: inset;
-  border-width: 0.2rem;
-  padding-top: 1rem;
-  padding-right: 1rem;
-  padding-bottom: 1rem;
-  padding-left: 1rem;
-  display: inline;
+  border-style: outset;
+  border-radius: 0.4rem;
+  border-width: 0.7rem;
+  padding-top: 0.05rem;
+  padding-right: 0.7rem;
+  padding-bottom: 0.05rem;
+  padding-left: 0.7rem;
+  display: inline-table;
   text-align: left;
+  margin-left: 1.5rem;
+  margin-top: 1.5rem;
 }
 
 .ElementDivOpen {
-  animation: openElementDiv1 0.3s east-out forwards;
+  animation: openElementDiv1 2s east-out forwards;
 }
 
 .ElementDivClose {
-  animation: closeElementDiv1 0.3s ease-out forwards;
+  animation: closeElementDiv1 2s ease-out forwards;
 }
 
 /* Contains multiple animated elements in a row
    Used in a standard div*/
 .ElementDivContainer {
   display: block;
+}
+
+.FullWidth {
+  width: 93%;
 }
 
 .Welcome1 {
