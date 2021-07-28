@@ -17,14 +17,10 @@ const PortfolioAudio = (props) => {
         exit: 1000
     };
 
-    // Counter variable for current colour class
-    let currentColourClass = [-1];
-
     // Number of columns on this page
     const numColumns = 2;
 
     // Width for SoundCloud components
-    //const soundCloudWidth = `${1 / numColumns * 100}%`;
     const soundCloudWidth = '100%';
 
     const items = [
@@ -203,8 +199,8 @@ const PortfolioAudio = (props) => {
                 ['AudioPortfolio1', 'AudioPortfolio2', 'AudioPortfolio3'],
                 props.showing,
                 animationTiming,
-                currentColourClass,
-                numColumns
+                props.colourClassCounter,
+                props.numColumns
             )}
         </div>
     );

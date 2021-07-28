@@ -18,6 +18,10 @@
   color: white;
 }
 
+.App a {
+  color: #07250E;
+}
+
 .App table {
   color: white;
   border: 0;
@@ -84,7 +88,7 @@
 }
 
 .FullWidth {
-  width: 93%;
+  width: 85%;
 }
 
 .Welcome1 {

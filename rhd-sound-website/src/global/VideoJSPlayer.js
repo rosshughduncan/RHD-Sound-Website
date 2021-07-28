@@ -20,6 +20,9 @@ export default class VideoJSPlayer extends Component {
                     <video
                         ref={node => this.videoNode = node}
                         className="video-js"
+                        style={{
+                            display: 'flex'
+                        }}
                     />
                 </div>
             </div>

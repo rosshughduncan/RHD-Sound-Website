@@ -1,12 +1,18 @@
 import React from 'react';
 import { CSSTransition } from "react-transition-group";
-import Item from '../../global/GlobalFunctions';
+import { Item, renderElementDiv } from '../../global/GlobalFunctions';
 import VideoJSPlayer from '../../global/VideoJSPlayer';
 
 const PortfolioVideo = (props) => {
     const videos = {
         raidersOfTheLostArk: props.videoJsSource('RaidersLostArkDemo.mp4'),
         finlingoFinancialMarkets: props.videoJsSource('FinlingoIntroToBanking_FinancialMarkets.mp4')
+    };
+
+    // Set animation timing for this page
+    const animationTiming = {
+        enter: 500,
+        exit: 1000
     };
 
     const items = [
@@ -17,16 +23,20 @@ const PortfolioVideo = (props) => {
         , false),
         Item(
             <div>
-                <p>Ross has also demonstrated skills in video editing and audio production for video. Here are some examples.</p>
+                <p>Ross has demonstrated skills in video editing and audio production for video. Here are some examples.</p>
             </div>
         , false),
         Item(
             <div>
-                <h2>Training Video for Finlingo (Financial Markets), part of their “Introduction to Banking series”</h2>
+                <h2>Training Video for Finlingo (Financial Markets),<br></br>part of their “Introduction to Banking series”</h2>
                 <p>
-                    Finlingo is a start-up creating training content on finance, with an app containing lessons and videos. Ross 
-                    edited and mixed the video and audio segments for their first series of videos within the new app. See the 
-                    business’s website at: <a
+                    Finlingo is a start-up creating training content on finance, with an app containing lessons and videos.
+                </p>
+                <p>
+                    Ross edited and mixed the video and audio segments for their first series of videos within the new app. 
+                </p>
+                <p>
+                    See the business’s website at: <a
                         href={"https://finlingo.com"}
                         target={"_blank"}
                         rel={"noopener noreferrer"}>
@@ -36,6 +46,7 @@ const PortfolioVideo = (props) => {
                 <br></br>
                 <br></br>
                 <VideoJSPlayer { ...videos.finlingoFinancialMarkets }/>
+                <br></br>
             </div>
         ),
         Item(
@@ -50,13 +61,23 @@ const PortfolioVideo = (props) => {
                 <br></br>
                 <br></br>
                 <VideoJSPlayer { ...videos.raidersOfTheLostArk }/>
+                <br></br>
             </div>
         )
     ];
 
     return (
         <div>
-            
+            {
+                renderElementDiv(
+                    items,
+                    ['VideoPortfolio1', 'VideoPortfolio2', 'VideoPortfolio3'],
+                    props.showing,
+                    animationTiming,
+                    props.colourClassCounter,
+                    props.numColumns
+                )
+            }
         </div>
     );
 };
