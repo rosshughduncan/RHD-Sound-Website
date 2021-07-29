@@ -25,8 +25,15 @@ export const pubImg = (fileName) => {
     return process.env.PUBLIC_URL + '/images/' + fileName;
 };
 
-export const renderElementDiv = (items, cssColourClasses, showFlag, animationTimeObj, 
+export const renderElementDiv = (items, cssColourClasses, showFlag,
                                  currentColourClass, noColumns) => {
+    // Set timing for animations
+    const animationTimeObj = {
+        appear: 1000,
+        enter: 600,
+        exit: 100
+    };
+
     // Choose the current colour class to use
     const thisColClass = () => {
         currentColourClass[0] += 1;
@@ -37,6 +44,7 @@ export const renderElementDiv = (items, cssColourClasses, showFlag, animationTim
     };
 
     const getElements = (items) => {
+        // Creates the animated div for every element on the page
         const getCSSTransition = (currentItem, index, isFullWidth) => {
             // Set up the classes for the element
             let classNameString;
@@ -52,13 +60,21 @@ export const renderElementDiv = (items, cssColourClasses, showFlag, animationTim
                 <CSSTransition
                     in={showFlag.showing}
                     timeout={animationTimeObj}
+                    enter
                     appear
                     unmountOnExit
                     classNames={{
+                        enter: 'ElementDivEnter',
+                        enterActive: 'ElementDivEnter',
                         appear: '',
-                        appearActive: 'ElementDivOpen',
-                        appearDone: ''
+                        appearActive: 'ElementDivAppear',
+                        appearDone: '',
+                        exit: '',
+                        exitActive: 'ElementDivClose',
+                        exitDone: ''
                     }}
+                    onEntering={() => console.log(`item ${index} entering`)}
+                    onExiting={() => console.log(`item ${index} exiting`)}
                     key={index}
                 >
                         <div className={classNameString}>

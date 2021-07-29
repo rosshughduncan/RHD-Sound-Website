@@ -9,13 +9,6 @@ const PortfolioVideo = (props) => {
         finlingoFinancialMarkets: props.videoJsSource('FinlingoIntroToBanking_FinancialMarkets.mp4')
     };
 
-    // Set animation timing for this page
-    const animationTiming = {
-        appear: 1000,
-        enter: 1000,
-        exit: 200
-    };
-
     const items = [
         Item(
             <div>
@@ -77,7 +70,6 @@ const PortfolioVideo = (props) => {
                     items,
                     ['VideoPortfolio1', 'VideoPortfolio2', 'VideoPortfolio3'],
                     props.show,
-                    animationTiming,
                     props.colourClassCounter,
                     props.numColumns
                 )

@@ -11,12 +11,6 @@ const PortfolioAudio = (props) => {
         shooterGameMusic: props.videoJsSource('ShooterGameMusic.mp4')
     };
 
-    // Setting the animation timing for this page
-    const animationTiming = {
-        enter: 500,
-        exit: 1000
-    };
-
     // Number of columns on this page
     const numColumns = 2;
 
@@ -198,7 +192,6 @@ const PortfolioAudio = (props) => {
                 items,
                 ['AudioPortfolio1', 'AudioPortfolio2', 'AudioPortfolio3'],
                 props.show,
-                animationTiming,
                 props.colourClassCounter,
                 props.numColumns
             )}

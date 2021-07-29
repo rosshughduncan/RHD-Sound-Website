@@ -73,12 +73,17 @@
   margin-top: 1.5rem;
 }
 
-.ElementDivOpen {
+.ElementDivAppear {
+  animation: openElementDiv1 500ms ease-out forwards;
+}
+
+.ElementDivEnter {
+  animation-delay: 100ms;
   animation: openElementDiv1 500ms ease-out forwards;
 }
 
 .ElementDivClose {
-  animation: closeElementDiv1 500ms ease-out forwards;
+  animation: closeElementDiv1 100ms ease-out forwards;
 }
 
 /* Contains multiple animated elements in a row

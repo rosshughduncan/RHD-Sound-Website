@@ -10,10 +10,10 @@ export default class MainBody extends Component {
 
     state = {
         portfolioAudio: {
-            showing: false
+            showing: true
         },
         portfolioVideo: {
-            showing: true
+            showing: false
         }
     };
     
@@ -35,17 +35,35 @@ export default class MainBody extends Component {
     render() {
         return (
             <div className={'App'}>
-                {/*<PortfolioAudio
-                    showing={true}
+                <button
+                    onClick={() => {
+                        this.setState({
+                            portfolioAudio: {
+                                showing: false
+                            },
+                            portfolioVideo: {
+                                showing: true
+                            }
+                        })
+                    }}    
+                >
+                        Test me
+                </button>
+                <PortfolioAudio
+                    show={this.state.portfolioAudio}
                     videoJsSource={this.videoJsOptions}
                     colourClassCounter={this.currentColourClass}
-                />*/}
+                    numColumns={this.noOfColumns}
+                />
                 <PortfolioVideo
                     show={this.state.portfolioVideo}
                     videoJsSource={this.videoJsOptions}
                     colourClassCounter={this.currentColourClass}
                     numColumns={this.noOfColumns}
                 />
+                
+
+                
             </div>
         );
     };
