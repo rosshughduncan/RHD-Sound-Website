@@ -13,37 +13,36 @@ class App extends Component {
       headers: [
         {
           name: 'Welcome',
-          showing: true
+          showing: true,
+          childSections: null
         },
         {
           name: 'About',
-          showing: false
+          showing: false,
+          childSections: null
         },
         {
           // Section names do not have a showing prop, as the pages themselves have this
-          name: 'Portfolio'
+          name: 'Portfolio',
+          childSections: [0, 1, 2, 3]
         }
       ],
       sections: [
         {
           name: 'Audio',
-          showing: false,
-          parentHeader: 2
+          showing: false
         },
         {
           name: 'Video',
-          showing: false,
-          parentHeader: 2
+          showing: false
         },
         {
           name: 'Events',
-          showing: false,
-          parentHeader: 2
+          showing: false
         },
         {
           name: 'Broadcasting',
-          showing: false,
-          parentHeader: 2
+          showing: false
         }
       ]
     }
