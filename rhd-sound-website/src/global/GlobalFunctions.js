@@ -25,7 +25,7 @@ export const pubImg = (fileName) => {
     return process.env.PUBLIC_URL + '/images/' + fileName;
 };
 
-export const renderElementDiv = (items, cssColourClasses, showing, animationTimeObj, 
+export const renderElementDiv = (items, cssColourClasses, showFlag, animationTimeObj, 
                                  currentColourClass, noColumns) => {
     // Choose the current colour class to use
     const thisColClass = () => {
@@ -39,10 +39,6 @@ export const renderElementDiv = (items, cssColourClasses, showing, animationTime
     const getElements = (items) => {
         const getCSSTransition = (currentItem, index, isFullWidth) => {
             // Set up the classes for the element
-            // let classNameString = `ElementDiv ${thisColClass()}`;
-            // if (isFullWidth) {
-            //     classNameString += 'FullWidth';
-            // }
             let classNameString;
             if (isFullWidth) {
                 classNameString = `ElementDiv ${thisColClass()} FullWidth`;
@@ -54,21 +50,17 @@ export const renderElementDiv = (items, cssColourClasses, showing, animationTime
             return (
                 // show state is passed in as props
                 <CSSTransition
-                    in={showing}
+                    in={showFlag.showing}
                     timeout={animationTimeObj}
-                    mountOnEnter
+                    appear
                     unmountOnExit
                     classNames={{
-                        enter: '',
-                        enterActive: 'ElementDivOpen',
-                        exit: '',
-                        exitActive: 'ElementDivClose',
                         appear: '',
-                        appearActive: ''
+                        appearActive: 'ElementDivOpen',
+                        appearDone: ''
                     }}
                     key={index}
                 >
-                        {/*<div classNames={`ElementDiv ${thisColClass()}`}>*/}
                         <div className={classNameString}>
                             {currentItem.content}
                         </div>

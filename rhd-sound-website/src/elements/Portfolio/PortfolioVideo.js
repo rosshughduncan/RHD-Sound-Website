@@ -11,8 +11,9 @@ const PortfolioVideo = (props) => {
 
     // Set animation timing for this page
     const animationTiming = {
-        enter: 500,
-        exit: 1000
+        appear: 1000,
+        enter: 1000,
+        exit: 200
     };
 
     const items = [
@@ -53,12 +54,15 @@ const PortfolioVideo = (props) => {
             <div>
                 <h2>Reconstruction of the Movie “Raiders of the Lost Ark” (1981)</h2>
                 <p>
-                    A re-interpretation of the famous fight scene from Raiders of the Lost Ark. The effects and atmos were all 
-                    re-sourced and edited by Ross to produce a sound for the picture. <i>Disclaimer: this video was created for 
-                    an academic assignment and is intended to be transformative under fair use. If the copyright holder of 
+                    A re-interpretation of the famous fight scene from Raiders of the Lost Ark.<br></br>The effects and atmos were all 
+                    re-sourced and edited by Ross to produce a sound for the picture.
+                </p>
+                <p>
+                    <i>Disclaimer: this video was created for 
+                    an academic assignment and is intended to be transformative under fair use.<br></br>If the copyright holder of 
                     the original material has any issues, please get in touch via the Contact section.</i>
                 </p>
-                <br></br>
+                <br></br>d
                 <br></br>
                 <VideoJSPlayer { ...videos.raidersOfTheLostArk }/>
                 <br></br>
@@ -72,7 +76,7 @@ const PortfolioVideo = (props) => {
                 renderElementDiv(
                     items,
                     ['VideoPortfolio1', 'VideoPortfolio2', 'VideoPortfolio3'],
-                    props.showing,
+                    props.show,
                     animationTiming,
                     props.colourClassCounter,
                     props.numColumns

@@ -7,6 +7,15 @@ import PortfolioVideo from "../elements/Portfolio/PortfolioVideo";
 
 export default class MainBody extends Component {
     noOfColumns = 2;
+
+    state = {
+        portfolioAudio: {
+            showing: false
+        },
+        portfolioVideo: {
+            showing: true
+        }
+    };
     
     // VideoJS options template for all pages which use it
     videoJsOptions = (source) => {
@@ -32,7 +41,7 @@ export default class MainBody extends Component {
                     colourClassCounter={this.currentColourClass}
                 />*/}
                 <PortfolioVideo
-                    showing={true}
+                    show={this.state.portfolioVideo}
                     videoJsSource={this.videoJsOptions}
                     colourClassCounter={this.currentColourClass}
                     numColumns={this.noOfColumns}

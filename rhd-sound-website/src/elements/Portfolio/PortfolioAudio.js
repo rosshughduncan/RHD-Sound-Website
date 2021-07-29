@@ -197,7 +197,7 @@ const PortfolioAudio = (props) => {
             {renderElementDiv(
                 items,
                 ['AudioPortfolio1', 'AudioPortfolio2', 'AudioPortfolio3'],
-                props.showing,
+                props.show,
                 animationTiming,
                 props.colourClassCounter,
                 props.numColumns
