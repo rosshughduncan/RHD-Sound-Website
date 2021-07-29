@@ -11,9 +11,6 @@ const PortfolioAudio = (props) => {
         shooterGameMusic: props.videoJsSource('ShooterGameMusic.mp4')
     };
 
-    // Number of columns on this page
-    const numColumns = 2;
-
     // Width for SoundCloud components
     const soundCloudWidth = '100%';
 

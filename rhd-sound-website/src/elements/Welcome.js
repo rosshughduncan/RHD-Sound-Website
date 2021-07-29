@@ -1,6 +1,5 @@
 import React from 'react';
-import { CSSTransition } from "react-transition-group";
-import { Item, pubImg } from '../global/GlobalFunctions';
+import { Item, pubImg, renderElementDiv } from '../global/GlobalFunctions';
 
 const Welcome = (props) => {
     const items = [
@@ -19,6 +18,7 @@ const Welcome = (props) => {
                 <img
                     src={pubImg('Welcome.jpg')}
                     alt={"Welcome to RHD Sound"}
+                    /*width={`${1 / props.numColumns * 100}%`}*/
                     width={'100%'}
                 />
             </div>
@@ -47,7 +47,13 @@ const Welcome = (props) => {
 
     return (
         <div>
-            
+            {renderElementDiv(
+                items,
+                ['Welcome1', 'Welcome2', 'Welcome3'],
+                props.show,
+                props.colourClassCounter,
+                props.numColumns
+            )}
         </div>
     );
 };

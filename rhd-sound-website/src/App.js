@@ -8,29 +8,54 @@ import MainBody from './components/MainBody';
 
 class App extends Component {
   state = {
-    // Set home page
-    headerBarSelection: 0,
-    sectionBarSelection: 0
-  };
+    // States for each page, with separate lists for headers (with no sub-pages) and sections
+    pageStatuses: {
+      headers: [
+        {
+          name: 'Welcome',
+          showing: true
+        },
+        {
+          name: 'About',
+          showing: false
+        },
+        {
+          // Section names do not have a showing prop, as the pages themselves have this
+          name: 'Portfolio'
+        }
+      ],
+      sections: [
+        {
+          name: 'Audio',
+          showing: false,
+          parentHeader: 2
+        },
+        {
+          name: 'Video',
+          showing: false,
+          parentHeader: 2
+        },
+        {
+          name: 'Events',
+          showing: false,
+          parentHeader: 2
+        },
+        {
+          name: 'Broadcasting',
+          showing: false,
+          parentHeader: 2
+        }
+      ]
+    }
+  };   
   
   render() {
     return (
       <div>
-        {/*<HeaderBar selectedHeader={this.state.headerBarSelection}/>
-        <SectionBar selectedSection={this.sectionBarSelection}/>
-        <MainBody
-          selctedHeader={this.state.headerBarSelection}
-          selectedSection={this.state.sectionBarSelection}
-        />
-        <Contact/>*/}
-
-        {/* TESTING ONLY */}
-
-        <MainBody/>
-
+        <MainBody pageStates={this.state.pageStatuses}/>
       </div>
     );
   };
-}
+};
 
 export default App;

@@ -1,6 +1,5 @@
 import React from 'react';
-import { CSSTransition } from "react-transition-group";
-import Item from '../../global/GlobalFunctions';
+import { Item, renderElementDiv } from '../../global/GlobalFunctions';
 import '../../App.css';
 
 const PortfolioEvents = (props) => {
@@ -36,7 +35,7 @@ const PortfolioEvents = (props) => {
                 <cite>
                     Liz Mowat and Samantha Harper: Joint Heads of Performing Arts, 
                     Blaise High School, Bristol (school stage production of "The Wiz", 
-                    an adaptation of “The Wizard of Oz” with a live band)
+                    an adaptation of “The Wizard of Oz” with a live band)<br></br><br></br>
                 </cite>
             </div>
         ),
@@ -45,10 +44,10 @@ const PortfolioEvents = (props) => {
                 <table>
                 <thead>
                     <tr>
-                        <th>Event</th>
-                        <th>Venue</th>
-                        <th>Role</th>
-                        <th>Date(s)</th>
+                        <th><h2>Event</h2></th>
+                        <th><h2>Venue</h2></th>
+                        <th><h2>Role</h2></th>
+                        <th><h2>Date(s)</h2></th>
                     </tr>
                 </thead>
                 <div className={'TableSeparator'}/>
@@ -331,7 +330,15 @@ const PortfolioEvents = (props) => {
 
     return (
         <div>
-            
+            {
+                renderElementDiv(
+                    items,
+                    ['EventsPortfolio1', 'EventsPortfolio2', 'EventsPortfolio3'],
+                    props.show,
+                    props.colourClassCounter,
+                    props.numColumns
+                )
+            }
         </div>
     );
 };

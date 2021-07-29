@@ -41,6 +41,10 @@
   font-variant: small-caps;
 }
 
+.App img {
+  display: block;
+}
+
  /**
   * Bars
   */
