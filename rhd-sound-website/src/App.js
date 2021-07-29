@@ -2,7 +2,6 @@ import './App.css';
 //import HeaderBar from './components/HeaderBar';
 //import SectionBar from './components/SectionBar';
 import '@fontsource/exo-2';
-//import PortfolioAudio from './elements/Portfolio/PortfolioAudio';
 import { Component } from 'react';
 import MainBody from './components/MainBody';
 
@@ -14,16 +13,17 @@ class App extends Component {
         {
           name: 'Welcome',
           showing: true,
-          childSections: null
         },
         {
           name: 'About',
           showing: false,
-          childSections: null
         },
         {
-          // Section names do not have a showing prop, as the pages themselves have this
+          /* Section names have a showing prop to indicate that they are highlighted
+             but do not show in the main body */
           name: 'Portfolio',
+          showing: false,
+          // Child sections are accessed using a try statement
           childSections: [0, 1, 2, 3]
         }
       ],
