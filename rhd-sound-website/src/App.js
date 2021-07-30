@@ -1,9 +1,10 @@
 import './App.css';
-//import HeaderBar from './components/HeaderBar';
-//import SectionBar from './components/SectionBar';
 import '@fontsource/exo-2';
 import { Component } from 'react';
 import MainBody from './components/MainBody';
+import HeaderBar from './components/HeaderBar';
+import SectionBar from './components/SectionBar';
+//import { selected } from './global/BarThemes';
 
 class App extends Component {
   state = {
@@ -46,11 +47,42 @@ class App extends Component {
         }
       ]
     }
-  };   
+  };
+  
+  headerBarClickHandler = (selectedHeaderIndex) => {
+    // Copy state
+    let newState = Object.assign({}, this.state);
+
+    // Set all headers before the selected header to showing: false
+    for (let i = 0; i < selectedHeaderIndex; i++) {
+      console.log(`current index: ${i}`);
+      newState.pageStatuses.headers[i].showing = false;
+    }
+
+    // Set the selected header to showing: true
+    newState.pageStatuses.headers[selectedHeaderIndex].showing = true;
+
+    /* Set all headers after the selected header to showing: false
+       ensuring there's no index out of bounds error */
+    const headersLength = this.state.pageStatuses.headers.length;
+    const nextIndex = selectedHeaderIndex + 1;
+    if (nextIndex < headersLength) {
+      for (let j = nextIndex; j < headersLength; j++) {
+        newState.pageStatuses.headers[j].showing = false;
+      }
+    }
+
+    this.setState(newState);
+  };
   
   render() {
     return (
       <div>
+        <HeaderBar
+          pageStates={this.state.pageStatuses}
+          buttonClicked={this.headerBarClickHandler}
+        />
+        <SectionBar pageStates={this.state.pageStatuses}/>
         <MainBody pageStates={this.state.pageStatuses}/>
       </div>
     );

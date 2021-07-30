@@ -2,15 +2,6 @@ import React from 'react';
 import { CSSTransition } from 'react-transition-group';
 import '../App.css';
 
-// export const getShowFlags = (items) => {
-//     // Return an array of false bools for each page item
-//     flags = [];
-//     for (item in items) {
-//         flags.push(false);   
-//     }
-//     return flags;
-// };
-
 // Creates an object with JSX elements. By default, the object can be split in two columns in the DOM
 export const Item = (thisContent, thisCanSplit = true) => {
     return (
@@ -73,8 +64,6 @@ export const renderElementDiv = (items, cssColourClasses, showFlag,
                         exitActive: 'ElementDivClose',
                         exitDone: ''
                     }}
-                    onEntering={() => console.log(`item ${index} entering`)}
-                    onExiting={() => console.log(`item ${index} exiting`)}
                     key={index}
                 >
                         <div className={classNameString}>

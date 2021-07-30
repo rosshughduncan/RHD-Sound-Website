@@ -1,6 +1,4 @@
 import { Component } from "react";
-//import { CSSTransition } from "react-transition-group";
-//import VideoJSPlayer from "../global/VideoJSPlayer";
 import { pubImg } from "../global/GlobalFunctions";
 import PortfolioAudio from "../elements/Portfolio/PortfolioAudio";
 import PortfolioVideo from "../elements/Portfolio/PortfolioVideo";
@@ -28,8 +26,6 @@ export default class MainBody extends Component {
     currentColourClass = [-1];
 
     render() {
-        console.log(this.props.pageStates);
-
         return (
             <div className={'App'}>
                 <Welcome
