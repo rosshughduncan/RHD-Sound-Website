@@ -42,15 +42,14 @@ const PortfolioEvents = (props) => {
         Item(
             <div>
                 <table>
-                <thead>
-                    <tr>
-                        <th><h2>Event</h2></th>
-                        <th><h2>Venue</h2></th>
-                        <th><h2>Role</h2></th>
-                        <th><h2>Date(s)</h2></th>
-                    </tr>
-                </thead>
-                <div className={'TableSeparator'}/>
+                    <thead>
+                        <tr>
+                            <th><h2>Event</h2></th>
+                            <th><h2>Venue</h2></th>
+                            <th><h2>Role</h2></th>
+                            <th><h2>Date(s)</h2></th>
+                        </tr>
+                    </thead>
                     <tbody>
                         <tr>
                             <td><b>Mixed live music nights</b></td>

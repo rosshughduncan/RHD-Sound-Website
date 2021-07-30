@@ -55,8 +55,9 @@ export const renderElementDiv = (items, cssColourClasses, showFlag,
                     appear
                     unmountOnExit
                     classNames={{
-                        enter: 'ElementDivEnter',
+                        enter: '',
                         enterActive: 'ElementDivEnter',
+                        enterDone: '',
                         appear: '',
                         appearActive: 'ElementDivAppear',
                         appearDone: '',

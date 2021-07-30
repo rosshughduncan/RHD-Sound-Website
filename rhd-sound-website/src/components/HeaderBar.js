@@ -1,5 +1,4 @@
 import { Component } from "react";
-//import { CSSTransition } from "react-transition-group";
 import styled, { ThemeProvider } from 'styled-components';
 import { selected, unselected } from "../global/BarThemes";
 import { pubImg } from "../global/GlobalFunctions";
@@ -23,24 +22,24 @@ export default class HeaderBar extends Component {
                 key={'LogoImage'}
             />
         ];
-        
-        // Find number of menu items. Will have 1 added as photo wil be part of menu bar
-        const numMenuItems = this.props.pageStates.headers.length + 1;
+
+        const pageStatesObjLength = this.props.pageStates.headers.length;
 
         // div for each menu item
         const MenuItem = styled.div`
             display: inline-block;
-            color: ${props => props.theme.col};
+            color: #050F09;
+            background-color: ${props => props.theme.col};
             text-align: center;
             padding-top: 0.4rem;
             padding-bottom: 0.4rem;
             margin-left: 1.5rem;
             margin-top: 1.5rem;
-            width: ${100 / numMenuItems}%;
+            width: ${100 / (pageStatesObjLength + 1)}%;
             font-weight: bold;
-            transition: 0.25s;
+            transition: 0.75s;
             &hover: {
-                color: ${props => props.theme.hoverCol};
+                background-color: ${props => props.theme.hoverCol};
                 cursor: pointer;
             }
             border-style: outset;
@@ -52,12 +51,13 @@ export default class HeaderBar extends Component {
         `;
 
         // Create menu items after the logo
-        for (let indx = 0; indx < this.props.pageStates.headers.length; indx++) {
+        for (let indx = 0; indx < pageStatesObjLength; indx++) {
             let headerState = this.props.pageStates.headers[indx];
             menuItems.push(
                 <ThemeProvider
                     theme={() => {
                         if (headerState.showing) {
+                            
                             return selected;
                         }
                         else {

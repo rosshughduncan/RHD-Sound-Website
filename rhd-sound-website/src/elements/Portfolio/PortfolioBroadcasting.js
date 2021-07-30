@@ -32,15 +32,15 @@ const PortfolioBroadcasting = (props) => {
                 <p>
                     Ross is based at their 
                     base in Cyprus, involved in technical duties including:
-                    <ul>
-                        <li>Providing assistance to the presenting team</li>
-                        <li>Audio and radio frequency equipment maintenance and administration</li>
-                        <li>IT and networking support</li>
-                        <li>Logistics operations around the island of Cyprus</li>
-                        <li>Liaising with the service delivery team</li>
-                        <li>Satellite TV equipment setup</li>
-                    </ul>
                 </p>
+                <ul>
+                    <li>Providing assistance to the presenting team</li>
+                    <li>Audio and radio frequency equipment maintenance and administration</li>
+                    <li>IT and networking support</li>
+                    <li>Logistics operations around the island of Cyprus</li>
+                    <li>Liaising with the service delivery team</li>
+                    <li>Satellite TV equipment setup</li>
+                </ul>
                 {/*<FBLike
                     href='https://www.facebook.com/BFBSCyprus'
                     action='like'

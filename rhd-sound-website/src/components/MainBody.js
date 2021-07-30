@@ -6,6 +6,7 @@ import PortfolioEvents from '../elements/Portfolio/PortfolioEvents';
 import PortfolioBroadcasting from '../elements/Portfolio/PortfolioBroadcasting';
 import Welcome from '../elements/Welcome';
 import About from '../elements/About';
+import Portfolio from "../elements/Portfolio";
 
 export default class MainBody extends Component {
     noOfColumns = 2;
@@ -37,6 +38,11 @@ export default class MainBody extends Component {
                 <About
                     show={this.props.pageStates.headers[1]}
                     videoJsSource={this.videoJsOptions}
+                    colourClassCounter={this.currentColourClass}
+                    numColumns={this.noOfColumns}
+                />
+                <Portfolio
+                    show={this.props.pageStates.headers[2]}
                     colourClassCounter={this.currentColourClass}
                     numColumns={this.noOfColumns}
                 />
