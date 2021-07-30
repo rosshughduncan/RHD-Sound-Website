@@ -43,9 +43,8 @@ export default class SectionBar extends Component {
             padding-bottom: 0.05rem;
         `;
 
-        let sectionState;
         for (let indx = 0; indx < pageStatesObjLength; indx++) {
-            sectionState = this.props.pageStates.sections[indx];
+            let sectionState = this.props.pageStates.sections[indx];
             sectionMenuItems.push(
                 <CSSTransition
                     in={sectionState.selectable}
