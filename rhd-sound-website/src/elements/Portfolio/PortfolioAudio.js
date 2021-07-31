@@ -37,22 +37,14 @@ const PortfolioAudio = (props) => {
         , false),
         Item(
             <div>
-                <h2>Science and Faith with Radio Maria England</h2>
+                <h2>Rude Edit – Orchard Ave EP</h2>
                 <p>
-                    A podcast series from Radio Maria England,<br></br>a Christian radio station based in Cambridge.<br></br><br></br>It explores 
-                    the relationship between science and Christianity.<br></br>The programme was produced and edited by many volunteers.
+                    An original EP of drum {'&'} bass and UK garage music<br></br>composed, mixed and mastered by Ross under 
+                    his Rude Edit alias.
                 </p>
-                <p>
-                    
-                </p>
-                <p>
-                    Ross was the station’s broadcast engineer at the time and supervised<br></br>them. The final masters and quality control corrections were made by Ross.
-                </p>
-                <p></p>
-                <SpotifyPlayer
-                    uri={'spotify:episode:0PIX5bohOdotuZ9GDr1q3R'}
-                    size={{width: soundCloudWidth, height: 200}}
-                    theme={'black'}
+                <ReactPlayer
+                    url={'https://soundcloud.com/rudeedit/sets/orchard-ave-ep-free-download'}
+                    width={soundCloudWidth}
                 />
             </div>
         ),
@@ -71,6 +63,27 @@ const PortfolioAudio = (props) => {
                 />
             </div>
         ),
+        // Item(
+        //     <div>
+        //         <h2>Science and Faith with Radio Maria England</h2>
+        //         <p>
+        //             A podcast series from Radio Maria England,<br></br>a Christian radio station based in Cambridge.<br></br><br></br>It explores 
+        //             the relationship between science and Christianity.<br></br>The programme was produced and edited by many volunteers.
+        //         </p>
+        //         <p>
+                    
+        //         </p>
+        //         <p>
+        //             Ross was the station’s broadcast engineer at the time and supervised<br></br>them. The final masters and quality control corrections were made by Ross.
+        //         </p>
+        //         <p></p>
+        //         <SpotifyPlayer
+        //             uri={'spotify:episode:0PIX5bohOdotuZ9GDr1q3R'}
+        //             size={{width: soundCloudWidth, height: 200}}
+        //             theme={'black'}
+        //         />
+        //     </div>
+        // ),
         Item (
             <div>
                 <h2>Mushnik and Son</h2>
@@ -84,6 +97,42 @@ const PortfolioAudio = (props) => {
                 </p>
                 <ReactPlayer
                     url={'https://soundcloud.com/step9productions/mushnik-and-son'}
+                    width={soundCloudWidth}
+                />
+            </div>
+        ),
+        Item(
+            <div>
+                <h2>Kings Kin - Trixie</h2>
+                <p>A single from Bristol-based band Kings Kin, mastered by Ross.</p>
+                <ReactPlayer
+                    url={'https://soundcloud.com/kings-kin-band/trixie'}
+                    width={soundCloudWidth}
+                />
+            </div>
+        ),
+        Item(
+            <div>
+                <h2>Arwel Brown – cover of Biffy Clyro’s “Fingerhut”</h2>
+                <p>
+                    A group university assignment project which achieved a first. 
+                </p>
+                <p>
+                    Vocals, bass and guitar are by Arwel, 
+                    with Ross Duncan on drums.<br></br>Recording, mixing and mastering by Ross Duncan, Maxi Bajela and Dan Morris.
+                </p>
+                <ReactPlayer
+                    url={'https://soundcloud.com/step9productions/arwel-brown-fingerhut-biffy-clyro-cover'}
+                    width={soundCloudWidth}
+                />
+            </div>
+        ),
+        Item(
+            <div>
+                <h2>The Orange Skies – You Don’t Wanna Say</h2>
+                <p>Part of a demo from Bristol-based band The Orange Skies, fully recorded, mixed and mastered by Ross.</p>
+                <ReactPlayer
+                    url={'https://soundcloud.com/step9productions/you-dont-wanna-say'}
                     width={soundCloudWidth}
                 />
             </div>
@@ -107,61 +156,12 @@ const PortfolioAudio = (props) => {
         ),
         Item(
             <div>
-                <h2>Rude Edit – Orchard Ave EP</h2>
-                <p>
-                    An original EP of drum {'&'} bass and UK garage music<br></br>composed, mixed and mastered by Ross under 
-                    his Rude Edit alias.
-                </p>
-                <ReactPlayer
-                    url={'https://soundcloud.com/rudeedit/sets/orchard-ave-ep-free-download'}
-                    width={soundCloudWidth}
-                />
-            </div>
-        ),
-        Item(
-            <div>
                 <h2>Changing States - Silver Linings</h2>
                 <p>
                     Part of a self-released EP by Bristol-based producer Changing States, mastered by Ross.
                 </p>
                 <ReactPlayer
                     url={'https://soundcloud.com/step9productions/changing-states-silver-linings'}
-                    width={soundCloudWidth}
-                />
-            </div>
-        ),
-        Item(
-            <div>
-                <h2>Kings Kin - Trixie</h2>
-                <p>A single from Bristol-based band Kings Kin, mastered by Ross.</p>
-                <ReactPlayer
-                    url={'https://soundcloud.com/kings-kin-band/trixie'}
-                    width={soundCloudWidth}
-                />
-            </div>
-        ),
-        Item(
-            <div>
-                <h2>The Orange Skies – You Don’t Wanna Say</h2>
-                <p>Part of a demo from Bristol-based band The Orange Skies, fully recorded, mixed and mastered by Ross.</p>
-                <ReactPlayer
-                    url={'https://soundcloud.com/step9productions/you-dont-wanna-say'}
-                    width={soundCloudWidth}
-                />
-            </div>
-        ),
-        Item(
-            <div>
-                <h2>Arwel Brown – cover of Biffy Clyro’s “Fingerhut”</h2>
-                <p>
-                    A group university assignment project which achieved a first. 
-                </p>
-                <p>
-                    Vocals, bass and guitar are by Arwel, 
-                    with Ross Duncan on drums.<br></br>Recording, mixing and mastering by Ross Duncan, Maxi Bajela and Dan Morris.
-                </p>
-                <ReactPlayer
-                    url={'https://soundcloud.com/step9productions/arwel-brown-fingerhut-biffy-clyro-cover'}
                     width={soundCloudWidth}
                 />
             </div>

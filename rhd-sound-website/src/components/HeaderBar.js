@@ -35,7 +35,7 @@ export default class HeaderBar extends Component {
             padding-bottom: 0.4rem;
             margin-left: 1.5rem;
             margin-top: 1.5rem;
-            width: ${100 / (pageStatesObjLength + 1)}%;
+            width: ${100 / (pageStatesObjLength + 2)}%;
             font-weight: bold;
             transition: 0.75s;
             &hover: {
@@ -44,10 +44,14 @@ export default class HeaderBar extends Component {
             }
             border-style: outset;
             border-radius: 0.4rem;
-            border-width: 0.2rem;
+            border-width: 0.4rem;
             padding-top: 0.05rem;
             padding-right: 0.7rem;
             padding-bottom: 0.05rem;
+            border-left-color: #02040A;
+            border-top-color: #060C1C;
+            border-bottom-color: #060C1C;
+            border-right-color: #0A1633;
         `;
 
         // Create menu items after the logo

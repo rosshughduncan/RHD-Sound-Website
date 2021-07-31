@@ -37,10 +37,14 @@ export default class SectionBar extends Component {
             }
             border-style: outset;
             border-radius: 0.4rem;
-            border-width: 0.2rem;
+            border-width: 0.4rem;
             padding-top: 0.05rem;
             padding-right: 0.7rem;
             padding-bottom: 0.05rem;
+            border-left-color: #0C2352;
+            border-top-color: #113273;
+            border-bottom-color: #113273;
+            border-right-color: #174196;
         `;
 
         for (let indx = 0; indx < pageStatesObjLength; indx++) {

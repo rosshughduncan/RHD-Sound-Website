@@ -45,6 +45,10 @@
   display: block;
 }
 
+.App tr {
+  padding-bottom: 0.2rem;
+}
+
  /**
   * Bars
   */

@@ -50,7 +50,7 @@ const PortfolioEvents = (props) => {
                             <th><h2>Date(s)</h2></th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody >
                         <tr>
                             <td><b>Mixed live music nights</b></td>
                             <td>The Canteen and Old Market Assembly, Bristol</td>
