@@ -1,7 +1,7 @@
 import React from 'react';
 //import { CSSTransition } from "react-transition-group";
 import { Item, renderElementDiv } from '../../global/GlobalFunctions';
-import SpotifyPlayer from 'react-spotify-player';
+//import SpotifyPlayer from 'react-spotify-player';
 import ReactPlayer from 'react-player';
 import VideoJSPlayer from '../../global/VideoJSPlayer';
 

@@ -1,4 +1,4 @@
-import { Component } from "react";
+import React, { Component } from "react";
 import { CSSTransition } from "react-transition-group";
 import styled, { ThemeProvider } from "styled-components";
 import { selectedSection, unselectedSection } from "../global/BarThemes";

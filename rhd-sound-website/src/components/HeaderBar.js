@@ -1,4 +1,4 @@
-import { Component } from "react";
+import React, { Component } from "react";
 import styled, { ThemeProvider } from 'styled-components';
 import { selected, unselected } from "../global/BarThemes";
 import { pubImg } from "../global/GlobalFunctions";

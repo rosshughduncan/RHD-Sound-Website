@@ -265,6 +265,22 @@
   border-right-color: #3A9615;
 }
 
+.Contact1 {
+  background-color: #967D21;
+  border-left-color: #B09227;
+  border-top-color: #BA9B29;
+  border-bottom-color: #BA9B29;
+  border-right-color: #C7A52C;
+}
+
+.Contact2 {
+  background-color: #B06919;
+  border-left-color: #BA6F1A;
+  border-top-color: #C7771C;
+  border-bottom-color: #C7771C;
+  border-right-color: #CF7C1D;
+}
+
 /**
  * Miscellaneous
  */

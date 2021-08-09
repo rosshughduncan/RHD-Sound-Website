@@ -1,9 +1,10 @@
 import './App.css';
 import '@fontsource/exo-2';
-import { Component } from 'react';
+import React, { Component } from 'react';
 import MainBody from './components/MainBody';
 import HeaderBar from './components/HeaderBar';
 import SectionBar from './components/SectionBar';
+import Contact from './components/Contact';
 
 class App extends Component {
   state = {
@@ -68,7 +69,8 @@ class App extends Component {
         newStateObj.pageStatuses.sections[indxChildSection].selectable = false;
       });
     }
-    catch { /* Reaching here means header has no sections belonging to it */ }
+    // Reaching here means header has no sections belonging to it
+    catch(e) {}
   };
 
   setHeaderAndSectionTrue = (indx, newStateObj) => {
@@ -87,7 +89,7 @@ class App extends Component {
                                                               .headers[indx]
                                                               .childSections;
     }
-    catch {}
+    catch(e) {}
   };
 
   setChildSections = (indx, newStateObj) => {
@@ -164,6 +166,7 @@ class App extends Component {
           buttonClicked={this.sectionBarClickHander}
         />
         <MainBody pageStates={this.state.pageStatuses}/>
+        <Contact/>
       </div>
     );
   };

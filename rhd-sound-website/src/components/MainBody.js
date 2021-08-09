@@ -1,4 +1,4 @@
-import { Component } from "react";
+import React, { Component } from "react";
 import { pubImg } from "../global/GlobalFunctions";
 import PortfolioAudio from "../elements/Portfolio/PortfolioAudio";
 import PortfolioVideo from "../elements/Portfolio/PortfolioVideo";

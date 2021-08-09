@@ -1,11 +1,61 @@
-import { Component } from "react";
-import { CSSTransition } from "react-transition-group";
+import React, { Component } from "react";
+import { renderElementDiv, Item } from "../global/GlobalFunctions";
 
 export default class Contact extends Component {
+    items = [
+        Item(
+            <div>
+                <h1>Contact</h1>
+            </div>
+        ),
+        Item(
+            <div>
+                Get in touch via: <a
+                    href={"mailto:ross@rhd-sound.com"}
+                >  
+                        ross@rhd-sound.com
+                </a>
+            </div>
+        )
+    ];
+
     render() {
+        // Sendinblue transactional emails API section
+        
+        // // Use Sendinblue library
+        // //const SibApiV3Sdk = require('sib-api-v3-sdk');
+        // let defaultClient = SibApiV3Sdk.ApiClient.instance;
+
+        // // Instantiate Sendinblue client
+        // let apiKey = defaultClient.authentications['api-key'];
+        // apiKey.apiKey = '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';
+        // let apiInstance = new SibApiV3Sdk.TransactionalEmailsApi();
+        // let smtpEmailToSend = new SibApiV3Sdk.SendSmtpEmail();
+
+        // // Email details
+        // smtpEmailToSend.subject = "Website Enquiry";
+        // smtpEmailToSend.sender = 'ross.hugh.duncan@gmail.com';
+        // smtpEmailToSend.to = 'ross@rhd-sound.com';
+        // smtpEmailToSend.replyTo = 'ross.hugh.duncan@gmail.com';
+        // smtpEmailToSend.htmlContent = "<html><body>This is a test message with <b>a bold section.</b></body></html>";
+
+        // apiInstance.sendTransacEmail(smtpEmailToSend).then((data) => {
+        //     console.log(`API successfully called. Data returned: ${JSON.stringify(data)}`);
+        // }, (error) => {
+        //     console.log(`Error occurred: ${error}`);
+        // })
+
         return (
             <div>
-                
+                {
+                    renderElementDiv(
+                        this.items,
+                        ['Contact1', 'Contact2'],
+                        true,
+                        [-1],
+                        2
+                    )
+                }
             </div>
         );
     };
