@@ -35,6 +35,8 @@ export const renderElementDiv = (items, cssColourClasses, showFlag,
     };
 
     const getElements = (items) => {
+        console.log(items);
+
         // Creates the animated div for every element on the page
         const getCSSTransition = (currentItem, index, isFullWidth) => {
             // Set up the classes for the element

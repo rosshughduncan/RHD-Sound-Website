@@ -4,7 +4,6 @@ import React, { Component } from 'react';
 import MainBody from './components/MainBody';
 import HeaderBar from './components/HeaderBar';
 import SectionBar from './components/SectionBar';
-import Contact from './components/Contact';
 
 class App extends Component {
   state = {
@@ -166,7 +165,6 @@ class App extends Component {
           buttonClicked={this.sectionBarClickHander}
         />
         <MainBody pageStates={this.state.pageStatuses}/>
-        <Contact/>
       </div>
     );
   };

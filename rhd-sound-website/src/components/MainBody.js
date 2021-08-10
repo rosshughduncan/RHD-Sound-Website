@@ -7,6 +7,7 @@ import PortfolioBroadcasting from '../elements/Portfolio/PortfolioBroadcasting';
 import Welcome from '../elements/Welcome';
 import About from '../elements/About';
 import Portfolio from "../elements/Portfolio";
+import Contact from "./Contact";
 
 export default class MainBody extends Component {
     noOfColumns = 2;
@@ -25,6 +26,10 @@ export default class MainBody extends Component {
     };
 
     currentColourClass = [-1];
+
+    // resetCurrentColourClass = () => {
+    //     this.currentColourClass[0] = -1;
+    // }
 
     render() {
         return (
@@ -67,6 +72,11 @@ export default class MainBody extends Component {
                 <PortfolioBroadcasting
                     show={this.props.pageStates.sections[3]}
                     videoJsSource={this.videoJsOptions}
+                    colourClassCounter={this.currentColourClass}
+                    numColumns={this.noOfColumns}
+                />
+                {/* {this.resetCurrentColourClass()} */}
+                <Contact
                     colourClassCounter={this.currentColourClass}
                     numColumns={this.noOfColumns}
                 />
