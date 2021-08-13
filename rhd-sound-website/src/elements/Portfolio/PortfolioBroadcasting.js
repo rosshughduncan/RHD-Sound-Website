@@ -1,5 +1,5 @@
 import React from 'react';
-import { Item, renderElementDiv } from '../../global/GlobalFunctions';
+import { Item, renderElementDiv, pubImg } from '../../global/GlobalFunctions';
 //import FBLike from 'facebook-plugins';
 
 const PortfolioBroadcasting = (props) => {
@@ -20,6 +20,15 @@ const PortfolioBroadcasting = (props) => {
         , false),
         Item(
             <div>
+                <img
+                    src={pubImg('FMTower.jpg')}
+                    alt={'An FM transmitter tower in Cyprus'}
+                    width={'100%'}
+                />
+            </div>
+        ),
+        Item(
+            <div>
                 <h2>BFBS Cyprus</h2>
                 <p><b>Role: Broadcast technician</b></p>
                 <p><b>Dates: </b>April 2021 – present</p>
@@ -27,7 +36,7 @@ const PortfolioBroadcasting = (props) => {
                     BFBS (British Forces Broadcasting Service) is a charity<br></br>providing 
                     radio, TV and entertainment services to members<br></br>of the British 
                     armed forces in the UK and overseas,<br></br>including the Army, Royal 
-                    Air Force, Royal Navy and United Nations. 
+                    Air Force and the Royal Navy. 
                 </p>
                 <p>
                     Ross is based at their 
@@ -49,6 +58,15 @@ const PortfolioBroadcasting = (props) => {
                     share={true}
                     showFaces={false}
                 />*/}
+            </div>
+        ),
+        Item(
+            <div>
+                <img
+                    src={pubImg('RadioMariaEnglandDesk.jpg')}
+                    alt={'Ross at the Radio Maria England On Air desk'}
+                    width={'100%'}
+                />
             </div>
         ),
         Item(

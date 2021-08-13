@@ -1,5 +1,5 @@
 import React from 'react';
-import { Item, renderElementDiv } from '../../global/GlobalFunctions';
+import { Item, pubImg, renderElementDiv } from '../../global/GlobalFunctions';
 import '../../App.css';
 
 const PortfolioEvents = (props) => {
@@ -25,6 +25,15 @@ const PortfolioEvents = (props) => {
                 </p>
             </div>
         ),
+        Item(
+            <div>
+                <img
+                    src={pubImg('MixingDesk.jpg')}
+                    alt={'Mixing desk at an event tech managed by Ross'}
+                    width={'100%'}
+                />
+            </div>
+        , false),
         Item(
             <div>
                 <h2>Testimonial</h2>

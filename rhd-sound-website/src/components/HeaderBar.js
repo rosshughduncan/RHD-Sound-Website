@@ -8,10 +8,10 @@ export default class HeaderBar extends Component {
         // List for storing the menu items
         let menuItems = [
             <img
-                src={pubImg('Logo.png')}
+                src={pubImg('RHDSoundLogo_1.png')}
                 alt='Logo'
-                width='240px'
-                height='36px'
+                width='301.5px'
+                height='99.2px'
                 style={{
                     'display': "inline-block",
                     'paddingTop': '0.4rem',
