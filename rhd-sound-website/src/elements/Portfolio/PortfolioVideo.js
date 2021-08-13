@@ -54,7 +54,7 @@ const PortfolioVideo = (props) => {
                     an academic assignment and is intended to be transformative under fair use.<br></br>If the copyright holder of 
                     the original material has any issues, please get in touch via the Contact section.</i>
                 </p>
-                <br></br>d
+                <br></br>
                 <br></br>
                 <VideoJSPlayer { ...videos.raidersOfTheLostArk }/>
                 <br></br>
