@@ -58,7 +58,7 @@ const PortfolioAudio = (props) => {
                     It achieved a first and the highest marks in the year group.
                 </p>
                 <ReactPlayer
-                    url={'https://soundcloud.com/step9productions/dont-do-drugs-kids-joshs-wild-ride-radio-drama'}
+                    url={'https://soundcloud.com/rhd-sound/dont-do-drugs-kids-joshs-wild-ride-radio-drama'}
                     width={soundCloudWidth}
                 />
             </div>
@@ -96,7 +96,7 @@ const PortfolioAudio = (props) => {
                     Frazer Meakin and Jack Blackmore.
                 </p>
                 <ReactPlayer
-                    url={'https://soundcloud.com/step9productions/mushnik-and-son'}
+                    url={'https://soundcloud.com/rhd-sound/mushnik-and-son'}
                     width={soundCloudWidth}
                 />
             </div>
@@ -122,7 +122,7 @@ const PortfolioAudio = (props) => {
                     with Ross Duncan on drums.<br></br>Recording, mixing and mastering by Ross Duncan, Maxi Bajela and Dan Morris.
                 </p>
                 <ReactPlayer
-                    url={'https://soundcloud.com/step9productions/arwel-brown-fingerhut-biffy-clyro-cover'}
+                    url={'https://soundcloud.com/rhd-sound/arwel-brown-fingerhut-biffy-clyro-cover'}
                     width={soundCloudWidth}
                 />
             </div>
@@ -132,7 +132,7 @@ const PortfolioAudio = (props) => {
                 <h2>The Orange Skies – You Don’t Wanna Say</h2>
                 <p>Part of a demo from Bristol-based band The Orange Skies, fully recorded, mixed and mastered by Ross.</p>
                 <ReactPlayer
-                    url={'https://soundcloud.com/step9productions/you-dont-wanna-say'}
+                    url={'https://soundcloud.com/rhd-sound/you-dont-wanna-say'}
                     width={soundCloudWidth}
                 />
             </div>
@@ -149,7 +149,7 @@ const PortfolioAudio = (props) => {
                     <i>Note: this version contains different music to the original episode<br></br>due to copyright reasons.</i>
                 </p>
                 <ReactPlayer
-                    url={'https://soundcloud.com/step9productions/radio-maria-england-the-childrens-rosary-glorious-mysteries'}
+                    url={'https://soundcloud.com/rhd-sound/radio-maria-england-the-childrens-rosary-glorious-mysteries'}
                     width={soundCloudWidth}
                 />
             </div>
@@ -161,7 +161,7 @@ const PortfolioAudio = (props) => {
                     Part of a self-released EP by Bristol-based producer Changing States, mastered by Ross.
                 </p>
                 <ReactPlayer
-                    url={'https://soundcloud.com/step9productions/changing-states-silver-linings'}
+                    url={'https://soundcloud.com/rhd-sound/changing-states-silver-linings'}
                     width={soundCloudWidth}
                 />
             </div>

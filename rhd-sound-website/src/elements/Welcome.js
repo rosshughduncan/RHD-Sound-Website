@@ -18,7 +18,6 @@ const Welcome = (props) => {
                 <img
                     src={pubImg('Welcome.jpg')}
                     alt={"Welcome to RHD Sound"}
-                    /*width={`${1 / props.numColumns * 100}%`}*/
                     width={'100%'}
                 />
             </div>

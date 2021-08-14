@@ -20,16 +20,6 @@ const PortfolioBroadcasting = (props) => {
         , false),
         Item(
             <div>
-                <img
-                    src={pubImg('FMTower.jpg')}
-                    alt={'An FM transmitter tower in Cyprus'}
-                    width={'100%'}
-
-                />
-            </div>
-        ),
-        Item(
-            <div>
                 <h2>BFBS Cyprus</h2>
                 <p><b>Role: Broadcast technician</b></p>
                 <p><b>Dates: </b>April 2021 – present</p>
@@ -59,15 +49,6 @@ const PortfolioBroadcasting = (props) => {
                     share={true}
                     showFaces={false}
                 />*/}
-            </div>
-        ),
-        Item(
-            <div>
-                <img
-                    src={pubImg('RadioMariaEnglandDesk.jpg')}
-                    alt={'Ross at the Radio Maria England On Air desk'}
-                    width={'100%'}
-                />
             </div>
         ),
         Item(
@@ -111,6 +92,15 @@ const PortfolioBroadcasting = (props) => {
                     share={true}
                     showFaces={false}
                 />*/}
+            </div>
+        ),
+        Item(
+            <div>
+                <img
+                    src={pubImg('RadioMariaEnglandDesk.jpg')}
+                    alt={'Ross at the Radio Maria England On Air desk'}
+                    width={'100%'}
+                />
             </div>
         )
     ];
