@@ -24,6 +24,7 @@ const PortfolioBroadcasting = (props) => {
                     src={pubImg('FMTower.jpg')}
                     alt={'An FM transmitter tower in Cyprus'}
                     width={'100%'}
+
                 />
             </div>
         ),

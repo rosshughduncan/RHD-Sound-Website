@@ -35,8 +35,6 @@ export const renderElementDiv = (items, cssColourClasses, showFlag,
     };
 
     const getElements = (items) => {
-        console.log(items);
-
         // Creates the animated div for every element on the page
         const getCSSTransition = (currentItem, index, isFullWidth) => {
             // Set up the classes for the element
@@ -87,6 +85,7 @@ export const renderElementDiv = (items, cssColourClasses, showFlag,
         // Split page items into container divs
         let containerDivs = [];
         const itemsLength = items.length;
+        const noColumnsMinus1 = noColumns - 1;
         for (let i = 0; i < itemsLength; i++) {
             /* Check if there is only one item left, or if the item is set to not split
                then fill that item in one div across the page */
@@ -112,7 +111,7 @@ export const renderElementDiv = (items, cssColourClasses, showFlag,
                     </div>
                 )
                 // Counter should be moved forward to prevent duplicate items from being shown
-                i += noColumns - 1;
+                i += noColumnsMinus1;
             }
         }
         

@@ -46,7 +46,8 @@ export default class HeaderBar extends Component {
             border-radius: 0.4rem;
             border-width: 0.4rem;
             padding-top: 0.05rem;
-            padding-right: 0.7rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
             padding-bottom: 0.05rem;
             border-left-color: #02040A;
             border-top-color: #060C1C;

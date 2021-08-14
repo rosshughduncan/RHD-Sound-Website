@@ -13,7 +13,7 @@
 .App div {
   margin-bottom: 0;
   font-family: 'Exo 2', sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   font-weight: 600;
   color: white;
 }
@@ -30,7 +30,7 @@
 }
 
 .App h1 {
-  font-size: 4em;
+  font-size: 3.5em;
   font-weight: 10;
   font-variant: small-caps;
 }
@@ -101,7 +101,7 @@
 }
 
 .FullWidth {
-  width: 85%;
+  width: 82%;
 }
 
 .MenuBar {
