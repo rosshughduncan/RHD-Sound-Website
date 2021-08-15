@@ -1,3 +1,0 @@
-    "dev:build-server": "NODE_ENV=development webpack --config webpack.server.js -w",
-    "dev:start": "nodemon ./src/server/index.js",
-    "dev": "npm-run-all --parallel build dev:*"
